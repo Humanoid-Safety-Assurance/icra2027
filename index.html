@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#174b43">
   <title>Assurance Under Change · Proposed ICRA 2027 Workshop</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20261101-2">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -71,19 +71,39 @@
         <p class="section-intro">Six invited research talks would connect deployment changes, assumption repair, safe learning, runtime enforcement, testing, and updated assurance. Contributed presentations and a shared case would connect these perspectives throughout the day.</p>
         <div class="program-layout">
           <div class="program-schedule">
-            <h3>At a glance</h3>
-            <dl class="schedule">
-              <div><dt>Morning</dt><dd>Invited talks, contributed lightning talks, and joint Q&amp;A</dd></div>
-              <div><dt>Lunch</dt><dd>Poster and demo exchange</dd></div>
-              <div><dt>Afternoon</dt><dd>Invited talks and small-group case discussion</dd></div>
-              <div><dt>Closing</dt><dd>Group reports and a panel comparing evidence and deployment decisions</dd></div>
-            </dl>
-            <p class="schedule-note">Tentative format. Session times, talk titles, and speaker roles will be announced after workshop acceptance and scheduling.</p>
+            <h3>Proposed agenda</h3>
+            <p class="schedule-note">All times are tentative and shown in Seoul local time (KST). The final schedule, talk titles, and speaker roles depend on workshop acceptance and scheduling.</p>
+            <div class="agenda-columns">
+              <div>
+                <h4>Morning</h4>
+                <dl class="schedule">
+                  <div><dt>08:30–08:45</dt><dd>Opening and shared case</dd></div>
+                  <div><dt>08:45–09:20</dt><dd>Invited research talk 1</dd></div>
+                  <div><dt>09:20–09:55</dt><dd>Invited research talk 2</dd></div>
+                  <div><dt>09:55–10:30</dt><dd>Invited research talk 3</dd></div>
+                  <div><dt>10:30–11:00</dt><dd>Coffee break</dd></div>
+                  <div><dt>11:00–12:00</dt><dd>Contributed lightning talks</dd></div>
+                  <div><dt>12:00–12:30</dt><dd>Contributor Q&amp;A</dd></div>
+                </dl>
+              </div>
+              <div>
+                <h4>Lunch and afternoon</h4>
+                <dl class="schedule">
+                  <div><dt>12:30–14:00</dt><dd>Lunch with posters and demos</dd></div>
+                  <div><dt>14:00–14:35</dt><dd>Invited research talk 4</dd></div>
+                  <div><dt>14:35–15:10</dt><dd>Invited research talk 5</dd></div>
+                  <div><dt>15:10–15:45</dt><dd>Invited research talk 6</dd></div>
+                  <div><dt>15:45–16:15</dt><dd>Coffee break</dd></div>
+                  <div><dt>16:15–17:00</dt><dd>Small-group case discussion</dd></div>
+                  <div><dt>17:00–18:00</dt><dd>Group reports and panel</dd></div>
+                </dl>
+              </div>
+            </div>
           </div>
           <article class="shared-case" aria-labelledby="case-title">
             <p class="eyebrow">A proposed shared case</p>
             <h3 id="case-title">A warehouse humanoid after an update</h3>
-            <p>A humanoid handling totes receives a policy update and moves beside an occluded pedestrian aisle. Workers may now approach earlier in the task. What do these changes mean for the assumptions behind its earlier safety assessment?</p>
+            <p>A humanoid transfers sealed totes to a table. Workers wait for tote release and arm withdrawal before approaching. A manipulation-policy update, relocation beside an occluded pedestrian aisle, and earlier human access change this operating setup. Which assumptions and safety evidence need to be checked again?</p>
             <ol class="case-steps">
               <li><strong>Trace the change.</strong> Identify affected claims and assumptions.</li>
               <li><strong>Examine the evidence.</strong> Compare what can be reused with what needs new analysis or testing.</li>
@@ -93,7 +113,7 @@
         </div>
         <div class="discussion-outcomes">
           <h3>What the discussion would produce</h3>
-          <p>Groups would record conditional decisions, evidence gaps, and competing arguments. The closing panel would identify observations or tests that could resolve disagreements. We plan to share reviewed discussion records, case materials, and open research questions after the workshop.</p>
+          <p>Each group would record the change, affected claims and assumptions, evidence to reuse or regenerate, and an operational decision with a fallback and recheck trigger. Groups would retain evidence gaps and competing arguments. The closing panel would identify observations or tests that could resolve disagreements. We plan to share reviewed records, case materials, and open research questions after the workshop.</p>
         </div>
       </section>
 
@@ -152,6 +172,9 @@
           <div>
             <p>We plan to welcome methods, deployment case studies, position papers, negative results, and tools from academic, industrial, and independent researchers.</p>
             <p>Contributions should explain a concrete change, the safety claims or assumptions it affects, the evidence needed to reassess them, and how that evidence informs an operational decision.</p>
+            <h3>Planned submission routes</h3>
+            <p><strong>Papers.</strong> We plan to invite 2–4-page non-archival papers, plus references. Two non-conflicted reviewers would assess scientific merit and the connection between changes, safety claims, evidence, and operational decisions.</p>
+            <p><strong>Fresh ideas.</strong> Researchers could submit a brief abstract for lightning-talk consideration without an accepted paper. Selected paper authors and fresh-idea researchers would share up to ten six-minute slots. Paper acceptance would not guarantee a lightning slot.</p>
             <p class="call-status">The call for contributions, submission instructions, and deadlines will be announced after workshop acceptance. Submissions are not yet open.</p>
           </div>
           <aside class="contribution-topics" aria-labelledby="contribution-topics-title">
@@ -219,7 +242,7 @@
       </section>
     </main>
 
-    <footer>Assurance Under Change · Proposed ICRA 2027 workshop</footer>
+    <footer>Assurance Under Change · Proposed ICRA 2027 workshop · Updated 1 November 2026</footer>
   </div>
 </body>
 </html>

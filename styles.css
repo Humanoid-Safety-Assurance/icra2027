@@ -62,13 +62,15 @@ h2 { margin: 0; font-size: 36px; font-weight: 600; line-height: 1.2; letter-spac
 .questions li::before { display: block; content: "0" counter(question); margin-bottom: 22px; color: #7d967e; font-size: 26px; font-weight: 450; letter-spacing: -0.04em; }
 .section-intro { max-width: 850px; margin: -4px 0 32px; font-size: 16px; line-height: 1.85; }
 h3 { margin: 0 0 16px; font-size: 20px; font-weight: 600; line-height: 1.4; letter-spacing: -0.02em; }
-.program-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 38px; align-items: start; }
+.program-layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 34px; align-items: start; }
 .program-schedule { padding: 4px 0; }
+.agenda-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 38px; }
+.agenda-columns h4 { margin: 0; padding-bottom: 12px; border-bottom: 1px solid var(--line); color: #52705b; font-size: 14px; font-weight: 600; }
 .schedule { margin: 0; }
-.schedule > div { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 16px; padding: 19px 0; border-bottom: 1px solid var(--line); }
-.schedule dt { margin: 2px 0 0; font-size: 12px; letter-spacing: 0; text-transform: none; }
+.schedule > div { display: grid; grid-template-columns: 100px minmax(0, 1fr); gap: 16px; padding: 17px 0; border-bottom: 1px solid var(--line); }
+.schedule dt { margin: 2px 0 0; font-size: 12px; font-variant-numeric: tabular-nums; letter-spacing: 0; text-transform: none; white-space: nowrap; }
 .schedule dd { font-size: 14px; font-weight: 400; line-height: 1.7; }
-.schedule-note { margin: 20px 0 0; color: var(--muted); font-size: 12px; line-height: 1.75; }
+.schedule-note { max-width: 800px; margin: 0 0 24px; color: var(--muted); font-size: 12px; line-height: 1.75; }
 .shared-case { padding: 30px; border: 1px solid #ccdcc9; border-radius: 14px; background: #eaf0e5; }
 .eyebrow { margin-bottom: 12px; color: #52705b; font-size: 10px; font-weight: 650; letter-spacing: 0.1em; text-transform: uppercase; }
 .shared-case h3 { font-size: 24px; }
@@ -81,6 +83,7 @@ h3 { margin: 0 0 16px; font-size: 20px; font-weight: 600; line-height: 1.4; lett
 .discussion-outcomes p { margin: 0; color: #4c6258; font-size: 14px; line-height: 1.85; }
 .contributions-layout { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: 60px; }
 .contributions-layout > div { font-size: 15px; line-height: 1.85; }
+.contributions-layout > div > h3 { margin-top: 26px; font-size: 17px; }
 .call-status { margin: 24px 0 0; padding: 18px 20px; border-left: 3px solid #7d967a; background: #eaf0e5; font-size: 13px; line-height: 1.8; }
 .contribution-topics h3 { font-size: 17px; }
 .contribution-topics ul { margin: 0 0 18px; padding-left: 18px; font-size: 14px; line-height: 1.8; }
@@ -142,7 +145,7 @@ footer { padding: 28px 0; color: var(--muted); font-size: 11px; }
   h1 { font-size: 58px; }
   .subtitle { max-width: 680px; }
   #about { gap: 36px; }
-  .program-layout { gap: 26px; }
+  .program-layout, .agenda-columns { gap: 26px; }
   .contributions-layout { gap: 36px; }
   .speaker { padding: 24px 18px; }
   .organizers { padding: 28px 20px; gap: 28px 20px; }
@@ -176,7 +179,7 @@ footer { padding: 28px 0; color: var(--muted); font-size: 11px; }
   .questions li::before { margin-bottom: 12px; font-size: 23px; }
   h3 { font-size: 19px; }
   .section-intro { margin-bottom: 26px; font-size: 15px; }
-  .program-layout, .discussion-outcomes, .contributions-layout { grid-template-columns: 1fr; gap: 28px; }
+  .program-layout, .agenda-columns, .discussion-outcomes, .contributions-layout { grid-template-columns: 1fr; gap: 28px; }
   .schedule > div { grid-template-columns: 74px minmax(0, 1fr); gap: 12px; padding: 16px 0; }
   .shared-case { padding: 24px; }
   .shared-case h3 { font-size: 22px; }
@@ -220,7 +223,8 @@ footer { padding: 28px 0; color: var(--muted); font-size: 11px; }
   h2 { font-size: 20pt; break-after: avoid; }
   .speaker, .organizers li { break-inside: avoid; }
   .speaker .bio { font-size: 10pt; }
-  .program-layout, .contributions-layout { grid-template-columns: 1fr 1fr; }
+  .program-layout { grid-template-columns: 1fr; }
+  .agenda-columns, .contributions-layout { grid-template-columns: 1fr 1fr; }
   #contact { background: white; color: black; }
   #contact h2, #contact p, #contact a { color: black; }
 }

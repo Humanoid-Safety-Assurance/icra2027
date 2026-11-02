@@ -6,7 +6,9 @@ Final workshop acceptance and scheduling are pending. The proposed date is **24 
 
 ## Website
 
-This repository contains the independent ICRA workshop website: [Humanoid-Safety-Assurance/icra2027](https://github.com/Humanoid-Safety-Assurance/icra2027). Workshop content was aligned with the organizers' working proposal on November 1, 2026. The page includes the proposed program, shared warehouse-humanoid discussion case, planned discussion outputs, and contribution scope. The call, submission instructions, session times, and talk roles remain pending. Speaker and organizer profiles were checked against their academic, institutional, or professional pages on October 29–30, 2026.
+This repository contains the independent ICRA workshop website: [Humanoid-Safety-Assurance/icra2027](https://github.com/Humanoid-Safety-Assurance/icra2027). Workshop content was aligned with the organizers' working proposal on November 1, 2026. The page includes a tentative two-column agenda from 08:30 to 18:00, the shared warehouse-humanoid discussion case and its original worker-access condition, concrete discussion-record fields, and planned contribution routes. All agenda times are tentative; no talk number is assigned to a speaker.
+
+Planned papers are 2–4 non-archival pages plus references, with two non-conflicted reviewers. A separate brief-abstract route supports fresh ideas without an accepted paper; paper acceptance does not guarantee a lightning slot. The call is not open, and submission instructions, deadlines, the final schedule, talk titles, and speaker roles remain pending. Speaker and organizer profiles were checked against their academic, institutional, or professional pages on October 29–30, 2026.
 
 - `index.html` — workshop page
 - `styles.css` — responsive styles
